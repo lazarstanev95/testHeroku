@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === 'production') {
     });
 }
 
-const server = http.createServer(app);
-server.listen(port, () => {
+//const server = http.createServer(app);
+app.listen(port, () => {
     console.log('Server is running on Port:', port);
 })
